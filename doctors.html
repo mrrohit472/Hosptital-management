@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Hospital</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .doctor-list {
+            margin-top: 20px;
+        }
+
+        .doctor-list h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .doctor-list table {
+            width: 70%;
+        }
+
+        .doctor-info {
+            padding: 10px;
+            
+        }
+
+        .doctor-info h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .doctor-info p {
+            margin-bottom: 5px;
+        }
+
+        .doctor-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .doctor-info a:hover {
+            text-decoration: underline;
+        }
+
+        .doctor-card {
+            text-align: center;
+        }
+
+        .doctor-photo {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html" class="home">Home</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="appointment.html">Appointments</a></li>
+            <li><a href="contact.html" class = "contact">Contact</a></li>
+            <li><a href="admin.php" class = "admin">Admin log-in</a></li>
+        </ul>
+    </div>
+
+
+
+    <div class="doctor-list">
+        <br><br><br>
+        <table>
+
+            <tr>
+                <td>
+                    <div class="doctor-card">
+                        <img class="doctor-photo" src="images/Shrijit.png" alt="Dr. Shrijit Pawar">
+                    </div>
+                </td>
+
+                <td>
+                    <div class="doctor-info">
+                        <h3>Dr. Shrijit Pawar</h3>
+                        <p>Degree: MS (Master of Surgery)</p>
+                        <p>Specialty: Cardiology</p>
+                        <p>Experience: 10 years</p>
+                        <p><a href="appointment.html">Get Appointment</a></p>
+                    </div>
+                </td>
+
+                
+
+            </tr>
+            <tr>
+                <td>
+                    <div class="doctor-card">
+                        <img class="doctor-photo" src="images/divya.png" alt="Dr. Divya Sayaji">
+                    </div>
+                </td>
+
+                <td>
+                    <div class="doctor-info">
+                        <h3>Dr. Divya Sayaji</h3>
+                        <p>Specialty: Orthopedics</p>
+                        <p>Degree: MS (Master of Surgery)</p>
+                        <p>Experience: 12 years</p>
+                        <p> <a href="appointment.html">Get Appointment</a></p>
+                    </div>
+                </td>
+
+                
+
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="doctor-card">
+                        <img class="doctor-photo" src="images/prathamesh.png" alt="Dr. Rohit Pawar">
+                    </div>
+                </td>
+
+                <td>
+                    <div class="doctor-info">
+                        <h3>Dr. Prathamesh Patil</h3>
+                        <p>Specialty: Pediatrics</p>
+                        <p>Degree: MS (Master of Surgery)</p>
+                        <p>Experience: 8 years</p>
+                        <p> <a href="appointment.html">Get Appointment</a></p>
+                    </div>
+                </td>
+
+                
+
+            </tr>
+
+        </table>
+
+
+
+        <!-- Repeat the same structure for other doctors -->
+
+    </div>
+    </div>
+
+
+
+</body>
+
+</html>

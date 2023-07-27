@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Hospital</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .logo {
+            max-width: 100px;
+            height: auto;
+            border-radius: 50%;
+        }
+        img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 10%;
+        }
+        tr, td {
+            margin: 60px;
+            padding: 30px;
+
+        }
+        .contact{
+            margin-right: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html" class="home">Home</a></li>
+            <li><button id="adminListingButton">Appointments-Listing</button></li>
+            <li><a href="index.html" class="home">Log-out</a></li>
+            
+
+
+
+        </ul>
+        <script>
+        // JavaScript code to handle button click event
+            document.getElementById("adminListingButton").addEventListener("click", function() {
+            // Redirect to adminlisting.php after button click
+            window.location.href = "adminlisting.php";
+        });
+    </script>
+
+
+
+    </div>
+    <br>
+
+</body>
+</html>

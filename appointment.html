@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Appointment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <style> 
+
+        #name,
+        #mobile,
+        #mailid,
+        select {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+
+
+    
+    
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html" class="home">Home</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="appointment.html">Appointments</a></li>
+            <li><a href="contact.html" class = "contact">Contact</a></li>
+            <li><a href="admin.php" class = "admin">Admin log-in</a></li>
+        </ul>
+    </div>
+    <br>
+        
+        <form name="apform" id="apform" method="post" action="backend.php">
+
+            <h2 class="fhead">Request for Doctor's Appointment</h2><br>
+            <table>
+                <tr>
+                    <td><label>Name : </label></td>
+                    <td><input type="text" name="name" id="name" placeholder="Enter your name" required></td>
+                </tr>
+                <tr>
+                    <td><label>Mobile No : </label></td>
+                    <td><input type="number" name="mobile" id="mobile" placeholder="Phone number" required></td>
+                </tr>
+                <tr>
+                    <td><label>Email : </label></td>
+                    <td><input type="email" name="mailid" id="mailid" placeholder="Enter your mail" required></td>
+                </tr>
+
+                <tr>
+                    <td><label>Patient Name : </label></td>
+                    <td><input type="pname" name="pname" id="pname" placeholder="Enter patiant name" required></td>
+                </tr>
+                <tr>
+                    <td><label>Patient Gender : </label></td>
+                    <td><select class="pgender" name="pgender" id="pgender" required>
+                        <option selected>Open this select menu</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Prefer not to say">Prefer not to say!</option>
+                      </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Patient Age : </label></td>
+                    <td><input type="number" name="page" id="page" placeholder="Enter patient age" required></td>
+                </tr>
+
+                <td><label>Select Doctor: </label></td>
+                    <td><select class="doc" name="doc" id="doc" required>
+                        <option selected>Open this select menu</option>
+                        <option value="Dr. Shrijit Pawar">Dr. Shrijit Pawar (Cardiology)</option>
+                        <option value="Dr. Divya Sayaji">Dr. Divya Sayaji (Pediatrics)</option>
+                        <option value="Dr. Prathamesh Patil">Dr. Prathamesh Patil (Orthopedics)</option>
+                      </select>
+                    </td>
+            </table>
+
+                    <input type="submit" class="submit" >
+                    <input type="reset" class="reset">
+
+        </form>
+   
+</body>
+</html>

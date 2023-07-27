@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            height: 400px;
+            margin-bottom: 20px;
+        }
+
+        .contactinfo {
+            border: 2px solid black;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        .contactinfo h2 {
+            margin-top: 0;
+        }
+
+        .contactinfo p {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html" class="home">Home</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="appointment.html">Appointments</a></li>
+            <li><a href="contact.html" class = "contact">Contact</a></li>
+            <li><a href="admin.php" class = "admin">Admin log-in</a></li>
+        </ul>
+    </div>
+
+    <br><br>
+
+    <!-- Contact Information -->
+    <div class="contactinfo">
+        <center>
+        <h2>Contact Us</h2>
+
+        <h3>Address</h3>
+        <p>Suyog Colony,Kajgaon road, Parola, Pin - 425111</p>
+
+        <h3>Phone Numbers</h3>
+        <p>Main: +91 9999999999</p>
+        <p>Support: +91 8888888888</p>
+
+        <h3>Email</h3>
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCHrjnFRhpSqLgwwhLlgvpBWvfvqgmxsMnqTVpXcJpcHHfxPBzTnTHzSBfMdqRhDjKkqjKbq">saihospitalnon@gmail.com  </a>
+
+        <h3>Emergency Contact</h3>
+        <p>Emergency: 911</p>
+    </center>
+    </div>
+
+    
+    
+    <!-- Google Maps location -->
+    <div id="map"></div>
+
+    
+    <!-- JavaScript for Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script>
+        function initMap() {
+            var location = { lat: 37.7749, lng: -122.4194 }; // Replace with your desired coordinates
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 12,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+    </script>
+</body>
+</html>
